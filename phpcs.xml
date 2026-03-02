@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<ruleset name="Project coding standards">
+  <!-- Combine these rulesets. -->
+  <rule ref="Drupal"/>
+  <rule ref="DrupalPractice"/>
+
+  <!-- If no paths are specified, check these ones. -->
+  <file>./web/modules/custom</file>
+  <file>./web/themes/custom</file>
+
+  <!-- Ignore vendor directories -->
+  <exclude-pattern>./vendor/*</exclude-pattern>
+  <exclude-pattern>./node_modules/*</exclude-pattern>
+</ruleset>

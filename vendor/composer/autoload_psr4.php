@@ -6,6 +6,8 @@ $vendorDir = dirname(__DIR__);
 $baseDir = dirname($vendorDir);
 
 return array(
+    'mglaman\\PHPStanDrupal\\' => array($vendorDir . '/mglaman/phpstan-drupal/src'),
+    'VariableAnalysis\\' => array($vendorDir . '/sirbrillig/phpcs-variable-analysis/VariableAnalysis'),
     'Twig\\' => array($vendorDir . '/twig/twig/src'),
     'Symfony\\Polyfill\\Php85\\' => array($vendorDir . '/symfony/polyfill-php85'),
     'Symfony\\Polyfill\\Php84\\' => array($vendorDir . '/symfony/polyfill-php84'),
@@ -38,6 +40,7 @@ return array(
     'Symfony\\Component\\DependencyInjection\\' => array($vendorDir . '/symfony/dependency-injection'),
     'Symfony\\Component\\Console\\' => array($vendorDir . '/symfony/console'),
     'Symfony\\Bridge\\PsrHttpMessage\\' => array($vendorDir . '/symfony/psr-http-message-bridge'),
+    'SlevomatCodingStandard\\' => array($vendorDir . '/slevomat/coding-standard/SlevomatCodingStandard'),
     'Revolt\\' => array($vendorDir . '/revolt/event-loop/src'),
     'Psr\\Log\\' => array($vendorDir . '/psr/log/src'),
     'Psr\\Http\\Message\\' => array($vendorDir . '/psr/http-factory/src', $vendorDir . '/psr/http-message/src'),
@@ -46,6 +49,10 @@ return array(
     'Psr\\Container\\' => array($vendorDir . '/psr/container/src'),
     'PhpTuf\\ComposerStager\\' => array($vendorDir . '/php-tuf/composer-stager/src'),
     'Peast\\' => array($vendorDir . '/mck89/peast/lib/Peast'),
+    'PHPStan\\PhpDocParser\\' => array($vendorDir . '/phpstan/phpdoc-parser/src'),
+    'PHPStan\\ExtensionInstaller\\' => array($vendorDir . '/phpstan/extension-installer/src'),
+    'PHPStan\\' => array($vendorDir . '/phpstan/phpstan-deprecation-rules/src'),
+    'PHPCSStandards\\Composer\\Plugin\\Installers\\PHPCodeSniffer\\' => array($vendorDir . '/dealerdirect/phpcodesniffer-composer-installer/src'),
     'Masterminds\\' => array($vendorDir . '/masterminds/html5/src'),
     'GuzzleHttp\\Psr7\\' => array($vendorDir . '/guzzlehttp/psr7/src'),
     'GuzzleHttp\\Promise\\' => array($vendorDir . '/guzzlehttp/promises/src'),
@@ -56,6 +63,9 @@ return array(
     'Drupal\\Composer\\Plugin\\RecipeUnpack\\' => array($vendorDir . '/drupal/core-recipe-unpack'),
     'Drupal\\Composer\\Plugin\\ProjectMessage\\' => array($vendorDir . '/drupal/core-project-message'),
     'Drupal\\Component\\' => array($baseDir . '/web/core/lib/Drupal/Component'),
+    'Drupal\\' => array($vendorDir . '/drupal/coder/coder_sniffer/Drupal'),
+    'DrupalPractice\\' => array($vendorDir . '/drupal/coder/coder_sniffer/DrupalPractice'),
+    'DrupalFinder\\' => array($vendorDir . '/webflo/drupal-finder/src'),
     'Doctrine\\Common\\Lexer\\' => array($vendorDir . '/doctrine/lexer/src'),
     'Composer\\Semver\\' => array($vendorDir . '/composer/semver/src'),
     'Composer\\Installers\\' => array($vendorDir . '/composer/installers/src/Composer/Installers'),
