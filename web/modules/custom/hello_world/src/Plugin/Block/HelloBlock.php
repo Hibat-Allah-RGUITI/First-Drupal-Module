@@ -30,4 +30,12 @@ class HelloBlock extends BlockBase
             '#custom_string' => 'Hello Block',
         ];
     }
+
+    public function defaultConfiguration()
+    {
+        $default_config = \Drupal::config('hello_world.settings');
+        return [
+            'hello_block_name' => $default_config->get('hello.name'),
+        ];
+    }
 }
